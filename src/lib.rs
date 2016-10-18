@@ -28,8 +28,8 @@ use glfw::Window;
 use glfw::WindowEvent;
 use glfw::WindowMode::Windowed;
 use glfw::WindowHint::ContextVersion;
-use glfw::WindowHint::OpenglForwardCompat;
-use glfw::WindowHint::OpenglProfile;
+use glfw::WindowHint::OpenGlForwardCompat;
+use glfw::WindowHint::OpenGlProfile;
 use glfw::OpenGlProfileHint;
 
 /// Builder for a GLFW window with robust OpenGL context selection.
@@ -151,49 +151,49 @@ impl<'glfw, 'title, 'monitor, 'hints> WindowBuilder<'glfw, 'title, 'monitor> {
         // OS X requires forward compatability, annoyingly enough.
         self.try_hints(&[
             WindowHint::ContextVersion(4, 5),
-            WindowHint::OpenglForwardCompat(true),
-            WindowHint::OpenglProfile(OpenGlProfileHint::Core)
+            WindowHint::OpenGlForwardCompat(true),
+            WindowHint::OpenGlProfile(OpenGlProfileHint::Core)
         ])
         .try_hints(&[
             WindowHint::ContextVersion(4, 4),
-            WindowHint::OpenglForwardCompat(true),
-            WindowHint::OpenglProfile(OpenGlProfileHint::Core)
+            WindowHint::OpenGlForwardCompat(true),
+            WindowHint::OpenGlProfile(OpenGlProfileHint::Core)
         ])
         .try_hints(&[
             WindowHint::ContextVersion(4, 3),
-            WindowHint::OpenglForwardCompat(true),
-            WindowHint::OpenglProfile(OpenGlProfileHint::Core)
+            WindowHint::OpenGlForwardCompat(true),
+            WindowHint::OpenGlProfile(OpenGlProfileHint::Core)
         ])
         .try_hints(&[
             WindowHint::ContextVersion(4, 2),
-            WindowHint::OpenglForwardCompat(true),
-            WindowHint::OpenglProfile(OpenGlProfileHint::Core)
+            WindowHint::OpenGlForwardCompat(true),
+            WindowHint::OpenGlProfile(OpenGlProfileHint::Core)
         ])
         .try_hints(&[
             WindowHint::ContextVersion(4, 1),
-            WindowHint::OpenglForwardCompat(true),
-            WindowHint::OpenglProfile(OpenGlProfileHint::Core)
+            WindowHint::OpenGlForwardCompat(true),
+            WindowHint::OpenGlProfile(OpenGlProfileHint::Core)
         ])
         .try_hints(&[
             WindowHint::ContextVersion(4, 0),
-            WindowHint::OpenglForwardCompat(true),
-            WindowHint::OpenglProfile(OpenGlProfileHint::Core)
+            WindowHint::OpenGlForwardCompat(true),
+            WindowHint::OpenGlProfile(OpenGlProfileHint::Core)
         ])
         .try_hints(&[
             WindowHint::ContextVersion(3, 2),
-            WindowHint::OpenglForwardCompat(true),
-            WindowHint::OpenglProfile(OpenGlProfileHint::Core),
+            WindowHint::OpenGlForwardCompat(true),
+            WindowHint::OpenGlProfile(OpenGlProfileHint::Core),
         ])
         .try_hints(&[
             WindowHint::ContextVersion(3, 1),
-            WindowHint::OpenglForwardCompat(true),
+            WindowHint::OpenGlForwardCompat(true),
         ])
         .try_hints(&[
             WindowHint::ContextVersion(3, 1),
         ])
         .try_hints(&[
             WindowHint::ContextVersion(3, 0),
-            WindowHint::OpenglForwardCompat(true),
+            WindowHint::OpenGlForwardCompat(true),
         ])
         .try_hints(&[
             WindowHint::ContextVersion(3, 0),
