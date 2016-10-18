@@ -21,16 +21,9 @@ extern crate log;
 
 use std::sync::mpsc::Receiver;
 
-use glfw::Glfw;
-use glfw::WindowMode;
-use glfw::WindowHint;
-use glfw::Window;
-use glfw::WindowEvent;
+use glfw::{Glfw, WindowMode, WindowHint, Window, WindowEvent, OpenGlProfileHint};
 use glfw::WindowMode::Windowed;
-use glfw::WindowHint::ContextVersion;
-use glfw::WindowHint::OpenGlForwardCompat;
-use glfw::WindowHint::OpenGlProfile;
-use glfw::OpenGlProfileHint;
+use glfw::WindowHint::{ContextVersion, OpenGlForwardCompat, OpenGlProfile};
 
 /// Builder for a GLFW window with robust OpenGL context selection.
 ///
